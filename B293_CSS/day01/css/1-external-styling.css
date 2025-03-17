@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    color: red;
+    font-size: 50px;
+}
+
+div{
+    text-align: justify;
+    background-color: steelblue;
+    color: white;
+}
+ol{
+    background-color: skyblue;
+
+
+}
+
+li{
+    color: green;
+    background-color: yellow;
+    font-size: 20px;
+}

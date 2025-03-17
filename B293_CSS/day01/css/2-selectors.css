@@ -1,0 +1,41 @@
+
+*{
+    font-size: 20px;
+    color: darkred;
+    background-color: pink !important;
+    /*important eklendiginde diger kurallara bakilmazksizin bu kural uygulanir.*/
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+    color: darkblue;
+}
+
+/*
+class olusturup sadece bu class'in verildigi elementlere uygulanacak kurallar yazabiliriz.
+Class isminden once .(nokta)kullanilmasi zorunludur.
+*/
+.active{
+    background-color: lightgreen;
+    color: darkblue;
+}
+
+/*
+id olusturup sadece bu id'in verildigi elementlere uygulanacak kurallar yazabiliriz.
+Id isminden once #(hasdag)kullanilmasi zorunludur.Id daha cok javascript icin kullaniriz.
+*/
+#myLink{
+    text-decoration: none;
+}
+
+/*
+    Daha ozel bir kural belirlemek icin tag isimi ve bosluk olmadan class ismi yazilir.==>div.ortala
+*/
+li.ortala{
+    text-align: center;
+}
+
+a#myLink{
+    color: darkblue;
+}

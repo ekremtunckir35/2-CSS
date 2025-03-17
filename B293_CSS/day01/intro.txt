@@ -1,0 +1,74 @@
+CSS --> Cascading Style Sheet
+CSS ->HTML eleamanlarinin stil ozelliklerini belirleyen bir isaretleme dilidir.
+CSS eklemek icin ilgili tagin icine "style"attribute eklenir.Buna "inline stil"denir.
+
+##TEMEL CSS ozelliklerini
+
+-font-size -->Yazinin buyuklugunu degistirmek icin kullanilir.
+
+-text-align-->Yazinin bulundugu tag icindeki yataydaki hizasini brlilemek icin kullanilir.
+Kullanilacak degerler
+   left
+   right
+   center
+   justify
+
+
+-color ==>yazinin rengini degistirmek icin kullanilir.
+Kullanilabilecek renk tanimlari(red,green,yellow..),
+hexadecimal system(#12AF45),rgb,rgba
+
+-background-color --> HTML elemaninin zemin rengini(arka plan rengini) degistirmek icin kullanilir.
+Kullanilabilecek degerler color ile aynidir.
+
+width ==> Html taglarindinin genisligini ayarlamak icin kullanilir.
+
+height ==> Html taglarinin yuksekligini ayarlamak icin kullanilir.
+
+width ve height icin kullanilasn degerler ==> % ,px ,vw,vh  birim olarak kullanlilr.
+
+**inline(blok)elemetlere width ve height degeri uygulanamaz.**
+**Gerekmedikce width ve height kullanmayiniz**
+======================================
+
+***Sayfa Seviyesinde Style(Internal)
+
+Tum sayfada etkili olabilecek stil tanimlamak icin <style> tagi kullanilir.
+<style>tagi genellikle head tagi icerisinde tanimlamir.
+
+
+===============================
+EXTERNAL -->Site Seviyesinde Style
+
+--Ruleset--
+
+
+--SELECTORS(SECICILER)
+-Tum HTML elemanlari secmek icin * isareti kullanilir.
+* -->bu isarete UNIVERSAL SELECTOR denir.
+
+2-Belli turdeki html  elemanlarini secmek icin elemanin ismi secici olarak kullanilir.
+
+3-Bazi html elemanlarini secmek icin class tanimlamasi yapilir.Bu sayede ayni isme sahip farkli turdeki elementler secilebilir.
+
+4-id kullanabiliriz.
+id icin # isareti kullanilir.
+
+Secimi biraz daha ozellestirerek istenilen class a sahip belli html elementleri de secilebilir.
+  p.ortalama{
+   text-align-center
+  }
+
+--ETKIN STILLER(CASCADING)
+Ayni element uzerinde etki eden ve lementin ayni ozelligini degistirmeye calisan birden fazla secici olmasi durumunda tarayici su kurallar sirasina gore hareket eder.
+  1- !important ifadesine sahip tanimlama her zaman degerlerini ezer.
+  2-Inline seciciler her zaman digerlerini ezer.
+  3-Hedefi en detayli sekilde tanimlayan secici digerlerini ezer.
+  4-Eger secici tanimlari ayni ise ,hedefe en yakin olan secici degerlerini ezer.
+
+  ozetle;
+  1-important
+  2-inline
+  3-detayli
+  4-yakin olan
+=================================
